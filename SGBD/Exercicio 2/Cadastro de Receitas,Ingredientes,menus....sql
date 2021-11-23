@@ -5,7 +5,7 @@ Use qtgostoso;
 /* Inserindo dados dos tipos de cozinha */
 insert into cozinha  
 	 VALUES (1,"brasileira",1),
-     (2,"mexicana",1),(3,"italiana",1),(NULL,"japonesa",1),
+        (2,"mexicana",1),(3,"italiana",1),(NULL,"japonesa",1),
 	 (5,"Alemã",1),(6,"Francesa",1),(7,"Americana",1),(8,"Arabe",1),
      (9,"Australiana",1),(10,"Portuguesa",1);
 /* Mostrando dados dos tipo de cozinha cadastrados no sistema */     
@@ -14,7 +14,7 @@ select * from cozinha;
 /* Inserindo dados dos tipos de refeição */
 insert into refeicao 
 	 values (1,"café da manhã",1),(2,"almoço",1),(3,"jantar",1),(4,"ceia",1),
-      (5,"café da tarde",1), (6,"lanche",1),(NULL,"desjejum",1);
+         (5,"café da tarde",1), (6,"lanche",1),(NULL,"desjejum",1);
 /* Mostrando dados dos tipo de refeição cadastrados no sistema */       
 select * from refeicao;
 
@@ -24,8 +24,8 @@ insert into  qtgostoso.categoria (categoria,ativo)
 	 ("cookies, cereais e doces",1),("Bolos",1),("saladas",1),
 	 ("vegetariano e vegano",1),("grelhados e defumados",1),
 	 ("peixes e frutos do mar",1),("massas e pizzas",1),
-     ("sanduíches",1),("entradas e finger foods",1),
-     ("bolos, tortas e cupcakes",1),("Tipicos por região",1),("Internacional",1);
+         ("sanduíches",1),("entradas e finger foods",1),
+         ("bolos, tortas e cupcakes",1),("Tipicos por região",1),("Internacional",1);
 /* Mostrando dados dos tipos de categoria cadastrados no sistema */      
 select * from categoria;
 
