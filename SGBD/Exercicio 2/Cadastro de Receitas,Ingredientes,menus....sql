@@ -4,26 +4,26 @@ Use qtgostoso;
 
 /* Inserindo dados dos tipos de cozinha */
 insert into cozinha  
-	 VALUES (1,"brasileira",1),
-     (2,"mexicana",1),(3,"italiana",1),(NULL,"japonesa",1),
-	 (5,"Alemã",1),(6,"Francesa",1),(7,"Americana",1),(8,"Arabe",1),
-     (9,"Australiana",1),(10,"Portuguesa",1);
+      values (1,"brasileira",1),
+      (2,"mexicana",1),(3,"italiana",1),(NULL,"japonesa",1),
+      (5,"Alemã",1),(6,"Francesa",1),(7,"Americana",1),(8,"Arabe",1),
+      (9,"Australiana",1),(10,"Portuguesa",1);
 /* Mostrando dados dos tipo de cozinha cadastrados no sistema */     
 select * from cozinha;
 
 /* Inserindo dados dos tipos de refeição */
 insert into refeicao 
-	 values (1,"café da manhã",1),(2,"almoço",1),(3,"jantar",1),(4,"ceia",1),
-	 (5,"café da tarde",1), (6,"lanche",1),(NULL,"desjejum",1);
+     values (1,"café da manhã",1),(2,"almoço",1),(3,"jantar",1),(4,"ceia",1),
+     (5,"café da tarde",1), (6,"lanche",1),(NULL,"desjejum",1);
 /* Mostrando dados dos tipo de refeição cadastrados no sistema */       
 select * from refeicao;
 
 /* Inserindo dados dos tipos de categoria */
 insert into  qtgostoso.categoria (categoria,ativo) 
-	 values ("carnes",1),("sobremesa",1),("arroz, grãos e feijões",1),
-	 ("cookies, cereais e doces",1),("Bolos",1),("saladas",1),
-	 ("vegetariano e vegano",1),("grelhados e defumados",1),
-	 ("peixes e frutos do mar",1),("massas e pizzas",1),
+     values ("carnes",1),("sobremesa",1),("arroz, grãos e feijões",1),
+     ("cookies, cereais e doces",1),("Bolos",1),("saladas",1),
+     ("vegetariano e vegano",1),("grelhados e defumados",1),
+     ("peixes e frutos do mar",1),("massas e pizzas",1),
      ("sanduíches",1),("entradas e finger foods",1),
      ("bolos, tortas e cupcakes",1),("Tipicos por região",1),("Internacional",1);
 /* Mostrando dados dos tipos de categoria cadastrados no sistema */      
@@ -71,78 +71,78 @@ select * from usuario;
 
 /* Inserindo graus de dificudades */     
 insert into dificuldade (dificuldade,ativo)
-	 values("Fácil",1),("Medio",1),("Dificil",1);
+     values("Fácil",1),("Medio",1),("Dificil",1);
 /* Mostrando os graus de dificuldade cadastrado no sistema */         
 select * from dificuldade;    
      
 /* Adicionando comidas típicas Brasileira*/        
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values("Ximxim de Galinha","Comida tipica Brasileira com origem da Bahia",1,3,1),
+     values("Ximxim de Galinha","Comida tipica Brasileira com origem da Bahia",1,3     ),
      ("Acarajé","Comida tipica Brasileira com origem da Bahia",1,3,2),
-	 ("Cocada"," Um iguaria africana. Na época da escravidão, as negras faziam esse doce para os senhores e para isso usaram um ingrediente abundante na Bahia, o coco.",1,1,3),
-	 ("Pão de queijo","Iguaria Brasileira com origem Mineira",1,1,4),
-	 ("Arroz com pequi","Dez em cada dez goianos amam pequi. O fruto, que tem um  gosto marcante e esconde perigosos espinhos no miolo,  é controverso para quem não é 'do Goiás'",1,2,5),
-	 ("Biscoito de polvilho","O biscoito de polvilho salgado Globo é um dos símbolos da vida carioca. Crocante e leve, ele pode ser consumido a qualquer hora, mas é nas praias que ele faz mais sucesso.",1,2,6),
-	 ("Canjica, canjicão ou mugunzá","Esse prato é conhecido por três nomes, mas a receita é a mesma:  um doce feito com milho branco,  típico dos festejos de São João.",1,2,7),
-	 ("Churrasco","Prato que tem origem fora do Brasil – especula-se que surgiu no Uruguai e na Argentina – e que se espalhou por todo o país. Porém, são  os gaúchos que mais assimilaram o hábito  de comer",1,2,8),
-	 ("Costela ao fogo de chão","Tradição gaúcha, a costela ao fogo de chão também surgiu, pelo que conta a cultura popular, nos pampas quando os donos dos gados escolhiam para si as melhores partes de carne",1,1,9),
-	 ("Empadão goiano","A receita surgiu quando a cidade de Goiás ainda se chamava Vila Boa, há quase 150 anos",1,2,10),
-	 ("Vaca atolada", "Prato típico da comida caipira a base de carne bovina,é muito popular nos estados de São Paulo, Rio de Janeiro, Minas Gerais, Pernambuco, Paraíba e também no Piauí.",1,2,11);
+     ("Cocada"," Um iguaria africana. Na época da escravidão, as negras faziam esse doce para os senhores e para isso usaram um ingrediente abundante na Bahia, o coco.",1,1,3),
+     ("Pão de queijo","Iguaria Brasileira com origem Mineira",1,1,4),
+     ("Arroz com pequi","Dez em cada dez goianos amam pequi. O fruto, que tem um  gosto marcante e esconde perigosos espinhos no miolo,  é controverso para quem não é 'do Goiás'",1,2,5),
+     ("Biscoito de polvilho","O biscoito de polvilho salgado Globo é um dos símbolos da vida carioca. Crocante e leve, ele pode ser consumido a qualquer hora, mas é nas praias que ele faz mais sucesso.",1,2,6),
+     ("Canjica, canjicão ou mugunzá","Esse prato é conhecido por três nomes, mas a receita é a mesma:  um doce feito com milho branco,  típico dos festejos de São João.",1,2,7),
+     ("Churrasco","Prato que tem origem fora do Brasil – especula-se que surgiu no Uruguai e na Argentina – e que se espalhou por todo o país. Porém, são  os gaúchos que mais assimilaram o hábito  de comer",1,2,8),
+     ("Costela ao fogo de chão","Tradição gaúcha, a costela ao fogo de chão também surgiu, pelo que conta a cultura popular, nos pampas quando os donos dos gados escolhiam para si as melhores partes de carne",1,1,9),
+     ("Empadão goiano","A receita surgiu quando a cidade de Goiás ainda se chamava Vila Boa, há quase 150 anos",1,2,10),
+     ("Vaca atolada", "Prato típico da comida caipira a base de carne bovina,é muito popular nos estados de São Paulo, Rio de Janeiro, Minas Gerais, Pernambuco, Paraíba e também no Piauí.",1,2,11);
 
 /* Adicionando comidas típicas Portuguesa*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario) 	 
      values ("Bolinho de bacalhau","Os bolinhos de bacalhau são uma relíquia de Portugal. Crocantes por fora e macios por dentro, normalmente são servidos como entrada.",10,2,12),
      ("Alheira","é um embutido (como se fosse uma linguiça), é defumada e pode ser feita com carnes de caça, porco ou aves.",10,2,13),
-	 ("Arroz de pato"," É quase um risoto, feito com carne de pato que vai ao forno e é servido com chouriços por cima, mais uma delícia da culinária portuguesa.",10,2,14);
+     ("Arroz de pato"," É quase um risoto, feito com carne de pato que vai ao forno e é servido com chouriços por cima, mais uma delícia da culinária portuguesa.",10,2,14);
      
 /* Adicionando comidas típicas Alemã*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario) 
      values( "Königsberger Klopse","É a tradicional almôndega alemã, herança dos tempos de Prússia que é até hoje bastante popular no norte do país, sobretudo na fronteira com a Polônia..",5,2,15),
-	 ("Bratapfel","O bratapfel é uma daquelas receitas alemãs tradicionais, que aproveita ingredientes populares no país e é servido como sobremesa no Natal.",5,2,1),
-	 ("Rote Grutze","é um doce com “sabor de Alemanha”, preparado com frutas vermelhas",5,2,2);
+     ("Bratapfel","O bratapfel é uma daquelas receitas alemãs tradicionais, que aproveita ingredientes populares no país e é servido como sobremesa no Natal.",5,2,1),
+     ("Rote Grutze","é um doce com “sabor de Alemanha”, preparado com frutas vermelhas",5,2,2);
 
 /* Adicionando comidas típicas Arabe*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)        
-	 values ("Kebab de Pernil com Molho de Hortelã","Um dos mais famosos itens da comida árabe é o Kebab, um tipo de espeto de carne e vegetais! Nesta versão você pode experimentá-lo com um toque refrescante da hortelã.",8,2,3),
-	 ("Quibe","Um outro clássico da culinária árabe é o quibe tradicional! Crocantinho e super fácil de fazer, não leva nem uma hora para ter um desses para toda família se deliciar.",8,2,4);
+     values ("Kebab de Pernil com Molho de Hortelã","Um dos mais famosos itens da comida árabe é o Kebab, um tipo de espeto de carne e vegetais! Nesta versão você pode experimentá-lo com um toque refrescante da hortelã.",8,2,3),
+     ("Quibe","Um outro clássico da culinária árabe é o quibe tradicional! Crocantinho e super fácil de fazer, não leva nem uma hora para ter um desses para toda família se deliciar.",8,2,4);
 
 /* Adicionando comidas típicas do Mexixo*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)        
-	 values("Pozole","Esfiha de Escarola, além de saborosa, é equilibrada pela massa feita com de Cereal Matinal NESFIT Tradicional. ",2,2,5),
-	 ("Chilaquiles","As chilaquiles dão um toque especial para aquela considerada a refeição mais importante do dia: o café da manhã. ",2,2,6);
+     values("Pozole","Esfiha de Escarola, além de saborosa, é equilibrada pela massa feita com de Cereal Matinal NESFIT Tradicional. ",2,2,5),
+     ("Chilaquiles","As chilaquiles dão um toque especial para aquela considerada a refeição mais importante do dia: o café da manhã. ",2,2,6);
 	 
 /* Adicionando comidas típicas do Italiana*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values ("Ravioli","É uma das comidas típicas da Itália que temos o costume de comer no Brasil. São mini pastéis recheados com diversos ingredientes. ",3,1,8),
-	 ("Lasagna","A Lasagna é uma das comidas típicas da Itália mais antigas. ",3,2,9),
-	 ("Struffoli","Essa é uma das comidas típicas da Itália que não é muito conhecida. Trata-se de um doce feito no Natal, principalmente em Nápoles.",3,2,10);
+     values ("Ravioli","É uma das comidas típicas da Itália que temos o costume de comer no Brasil. São mini pastéis recheados com diversos ingredientes. ",3,1,8),
+     ("Lasagna","A Lasagna é uma das comidas típicas da Itália mais antigas. ",3,2,9),
+     ("Struffoli","Essa é uma das comidas típicas da Itália que não é muito conhecida. Trata-se de um doce feito no Natal, principalmente em Nápoles.",3,2,10);
 
 /* Adicionando comidas típicas do Japonesa*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values ("Sushi","Esta típica comida japonesa é um bolinho de arroz enrolado com uma alga. ",4,2,11),
-	 ("Sashimi"," Sashimi significa carne perfurada (sashi= perfurada + mi= carne).",4,2,12);
+     values ("Sushi","Esta típica comida japonesa é um bolinho de arroz enrolado com uma alga. ",4,2,11),
+     ("Sashimi"," Sashimi significa carne perfurada (sashi= perfurada + mi= carne).",4,2,12);
 
 /* Adicionando comidas típicas do Francesa*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values ("Croque-Monsieur","O croque-monsieur nada mais é do que um misto quente mais elaborado. ",6,2,10),
-	 ("Crepe","Panquecas de massa fina são típicas da região noroeste do país chamada de Bretagne.A crepe é conhecida pelas opções de recheios doces.",6,2,11);
+     values ("Croque-Monsieur","O croque-monsieur nada mais é do que um misto quente mais elaborado. ",6,2,10),
+     ("Crepe","Panquecas de massa fina são típicas da região noroeste do país chamada de Bretagne.A crepe é conhecida pelas opções de recheios doces.",6,2,11);
 	 
 /* Adicionando comidas típicas Americana*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values ("Panquecas americanas "," As panquecas fazem parte das  comidas típicas dos estados unidos.Ela é bem tradicional no café da manhã e são completamente diferentes das que nós, brasileiros, estamos acostumados a comer no almoço ou no jantar. ",7,2,13),
-	 (" Hambúrguer","O hambúrguer, com toda a certeza, é uma das marcas registradas do país americano e é sinônimo de comida americana. ",7,2,14); 
+     values ("Panquecas americanas "," As panquecas fazem parte das  comidas típicas dos estados unidos.Ela é bem tradicional no café da manhã e são completamente diferentes das que nós, brasileiros, estamos acostumados a comer no almoço ou no jantar. ",7,2,13),
+     (" Hambúrguer","O hambúrguer, com toda a certeza, é uma das marcas registradas do país americano e é sinônimo de comida americana. ",7,2,14); 
      
 /* Adicionando comidas típicas Australiana*/
 insert into receita (titulo,descricao,idcozinha,iddificuldade,idusuario)
-	 values ("Pies (Tortas)"," Um dos pratos típicos da Austrália é a famigerada torta.  ",9,2,7),
-	 ("Damper","Acostumado com o pão francês daqui? Por lá você facilmente irá encontrar o clássico pão Damper. É um tipo de alimento muito simples e saboroso que cai bem em diferentes refeições, especialmente no café da manhã!.",9,2,15),
-	 (" Filé de atum grelhado","Além do filé de atum grelhado ser um alimento típico no país, a carne de peixe no geral é uma das mais consumidas pelos aussies.",9,2,1);
+     values ("Pies (Tortas)"," Um dos pratos típicos da Austrália é a famigerada torta.  ",9,2,7),
+     ("Damper","Acostumado com o pão francês daqui? Por lá você facilmente irá encontrar o clássico pão Damper. É um tipo de alimento muito simples e saboroso que cai bem em diferentes refeições, especialmente no café da manhã!.",9,2,15),
+     (" Filé de atum grelhado","Além do filé de atum grelhado ser um alimento típico no país, a carne de peixe no geral é uma das mais consumidas pelos aussies.",9,2,1);
 /* Mostrando todas as receitas cadastrado no sistema */           
 select * from receita; 
     
 /* Associando todas as categorias as receitas  */       
 insert into categoria_receita (idcategoria,iidreceita) 
-	 values(1,1),(12,2),(4,3),(10,4),(3,5),(4,6),(4,7),(1,8),(1,9),(2,10),(1,11),(5,12),(8,13),(1,14),
+     values(1,1),(12,2),(4,3),(10,4),(3,5),(4,6),(4,7),(1,8),(1,9),(2,10),(1,11),(5,12),(8,13),(1,14),
      (1,15),(2,16),(4,17),(1,18),(12,19),(10,20),(12,21),(11,22),(12,23),(10,24),(4,25),(3,26),(9,27),(12,28),
      (4,29),(12,30),(11,31),(13,32),(10,33),(9,34);
 /* Mostrando todas as categorias associadas as receitas  */      
@@ -150,7 +150,7 @@ select * from categoria_receita;
  
 /* Associando todas as refeições as receitas  */     
 insert into refeicao_receita (idrefeicao,idreceita) 
-	 values(2,1),(6,2),(6,3),(2,4),(6,5),(5,6),(1,7),(2,8),(2,9),(5,10),(2,11),(1,12),(2,13),(2,14),
+     values(2,1),(6,2),(6,3),(2,4),(6,5),(5,6),(1,7),(2,8),(2,9),(5,10),(2,11),(1,12),(2,13),(2,14),
      (2,15),(5,16),(1,17),(2,18),(6,19),(2,20),(1,21),(6,22),(2,23),(2,24),(6,25),(6,26),(6,27),(6,28),
      (5,29),(1,30),(6,31),(1,32),(1,33),(2,34);
 /* Mostrando todas as refeições associadas as receitas  */       
@@ -186,7 +186,7 @@ insert into preparo (instrucao,idreceita)
      Enquanto isso, bata a cebola, o coentro, a castanha, o gengibre e o amendoim em um liquidificador.
      Adicione a mistura ao refogado e deixe cozinhar em fogo médio até o frango ficar macio. Para finalizar, adicione o leite de coco e está pronto!",1),
      
-	("Em uma bacia grande, coloque o feijão e lave várias vezes, até sair toda a casca.
+     ("Em uma bacia grande, coloque o feijão e lave várias vezes, até sair toda a casca.
      Deixe de molho por 3 horas e então, bata tudo no liquidificador até forma uma pasta. Na hora de fritar, bater novamente com uma colher de pau até ficar bem fofinha.
      Deixa esquentar o dendê, com a colher de pau e uma de arroz, modele os bolinhos e frite-os no dendê.",2),
      
@@ -465,108 +465,108 @@ insert into ingrediente_receita (idingrediente,idreceita,idmedida,quantidade)
      (15,3,3,1),(16,3,2,4),(17,3,4,100),
      
      /* Ingredientes e medidas  da receita Pão de Queijo */    
-	(18,4,4,800),(19,4,1,1),(20,4,1,1),(21,4,1,1/2),(22,4,null,2),(23,4,4,100),(13,4,16,null),
+     (18,4,4,800),(19,4,1,1),(20,4,1,1),(21,4,1,1/2),(22,4,null,2),(23,4,4,100),(13,4,16,null),
     
     /* Ingredientes e medidas  da receita Arroz com Pequi*/    
 	(21,5,12,1/4),(25,5,17,1/2),(9,5,13,2),(11,5,15,1),(26,5,12,2),(19,5,12,4),(13,5,16,null),(27,5,16,null),(28,5,16,null),
     
     /* Ingredientes e medidas  da receita Biscoito de Povilho*/    
-	(18,6,4,500),(19,6,5,200),(21,6,5,150),(22,6,null,5),(13,6,16,null),
+    (18,6,4,500),(19,6,5,200),(21,6,5,150),(22,6,null,5),(13,6,16,null),
     
     /* Ingredientes e medidas  da receita Canjica,Munguzá */    
-	(30,7,18,1/2),(19,7,17,2),(20,7,8,1),(15,7,3,1),(31,7,8,null),(32,7,null,5),
+    (30,7,18,1/2),(19,7,17,2),(20,7,8,1),(15,7,3,1),(31,7,8,null),(32,7,null,5),
     
     /* Ingredientes e medidas  da receita Churrasco */    
-	(34,8,8,null),(107,8,16,null),
+    (34,8,8,null),(107,8,16,null),
     
     /* Ingredientes e medidas  da receita Costela ao fogo de chão */    
-	(33,9,6,15),(107,9,6,2),(35,9,5,500),
+    (33,9,6,15),(107,9,6,2),(35,9,5,500),
     
     /* Ingredientes e medidas  da receita Empadão goiano */    
-	(36,10,12,4),(22,10,null,3),(21,10,12,1/2),(13,10,16,null),(37,10,7,1),(38,10,2,2),(1,10,4,300),(39,10,8,2),(40,10,4,150),
+    (36,10,12,4),(22,10,null,3),(21,10,12,1/2),(13,10,16,null),(37,10,7,1),(38,10,2,2),(1,10,4,300),(39,10,8,2),(40,10,4,150),
     (41,10,4,150),(42,10,4,50),(9,10,13,1),(11,10,15,1),(27,10,16,null),(43,10,5,250),
     
     /* Ingredientes e medidas  da receita Empadão Vaca Atolada */    
-	(33,11,6,1),(45,11,4,500),(9,11,16,null),(46,11,null,null),
+    (33,11,6,1),(45,11,4,500),(9,11,16,null),(46,11,null,null),
     
     /* Ingredientes e medidas  da receita Bolinho de bacalhau */    
-	(108,12,2,2),(9,12,2,1/2),(11,12,2,2),(47,12,null,2),(22,12,null,1),(48,12,4,200),(49,12,4,30),(28,12,16,null),
+    (108,12,2,2),(9,12,2,1/2),(11,12,2,2),(47,12,null,2),(22,12,null,1),(48,12,4,200),(49,12,4,30),(28,12,16,null),
     (50,12,16,null),(13,12,16,null),
     
     /* Ingredientes e medidas  da receita Alheira */    
-	(39,13,null,1),(36,13,2,2),(21,13,1,1),
+    (39,13,null,1),(36,13,2,2),(21,13,1,1),
     
     /* Ingredientes e medidas  da receita Arroz de pato*/    
-	(21,14,7,1),(51,14,16,null),(11,14,4,200),(9,14,13,2),(52,14,1,1),(53,14,8,2),(54,14,null,null),(19,14,8,2),(26,14,12,2.5),
+    (21,14,7,1),(51,14,16,null),(11,14,4,200),(9,14,13,2),(52,14,1,1),(53,14,8,2),(54,14,null,null),(19,14,8,2),(26,14,12,2.5),
     (55,14,11,1),(29,14,16,null),
     
     /* Ingredientes e medidas  da receita Königsberger Klopse*/    
-	(56,15,null,1),(11,15,null,null),(57,15,4,600),(22,15,null,3),(13,15,16,null),(7,15,16,null),(58,15,null,4),(38,15,4,50),(36,15,4,50),
+    (56,15,null,1),(11,15,null,null),(57,15,4,600),(22,15,null,3),(13,15,16,null),(7,15,16,null),(58,15,null,4),(38,15,4,50),(36,15,4,50),
     (5,15,null,null),(16,15,null,null),(60,15,5,100),
     
     /* Ingredientes e medidas  da receita Bratapfel*/    
-	(61,16,null,6),(16,16,4,200),(62,16,4,50),(32,16,null,null),(63,16,null,null),(64,16,null,null),(65,16,null,null),
+    (61,16,null,6),(16,16,4,200),(62,16,4,50),(32,16,null,null),(63,16,null,null),(64,16,null,null),(65,16,null,null),
     
     /* Ingredientes e medidas  da receita Rote Grutze*/    
-	(66,17,4,600),(67,17,12,1/4),(16,17,2,4),(106,17,12,1/2),(5,17,2,1),
+    (66,17,4,600),(67,17,12,1/4),(16,17,2,4),(106,17,12,1/2),(5,17,2,1),
     
     /* Ingredientes e medidas  da receita Kebab de Pernil com Molho de Hortel*/    
-	(68,18,4,400),(16,18,2,1),(69,18,7,1/2),(13,18,7,1),(5,18,null,1),(70,18,null,1/2),(71,18,null,1),(108,18,2,1),(72,18,3,1),
+    (68,18,4,400),(16,18,2,1),(69,18,7,1/2),(13,18,7,1),(5,18,null,1),(70,18,null,1/2),(71,18,null,1),(108,18,2,1),(72,18,3,1),
     (73,18,null,2),(13,18,null,1),(74,18,12,1/2),(75,18,2,1/2),
     
     /* Ingredientes e medidas  da receita Quibe*/    
-	(57,19,6,1),(36,19,6,1),(38,19,2,2),(11,19,null,2),(13,19,16,null),(7,19,16,null),(74,19,16,null),
+    (57,19,6,1),(36,19,6,1),(38,19,2,2),(11,19,null,2),(13,19,16,null),(7,19,16,null),(74,19,16,null),
     
     /* Ingredientes e medidas  da receita Pozole*/    
-	(76,20,4,500),(106,20,17,2.5),(11,20,null,1/2),(9,20,13,3),(68,20,4,500),(59,20,4,90),(77,20,null,6),
+    (76,20,4,500),(106,20,17,2.5),(11,20,null,1/2),(9,20,13,3),(68,20,4,500),(59,20,4,90),(77,20,null,6),
     (11,20,12,1),(78,20,8,1/2),(79,20,12,1/2),(5,20,null,5),(13,20,16,null),
     
     /* Ingredientes e medidas  da receita Chilaquiles*/    
-	(1,21,null,1),(11,21,15,1/2),(9,21,13,2),(85,21,3,2),(70,21,15,1),(30,21,12,4),(81,21,4,150),
+    (1,21,null,1),(11,21,15,1/2),(9,21,13,2),(85,21,3,2),(70,21,15,1),(30,21,12,4),(81,21,4,150),
     (71,21,8,1),(28,21,2,2),(1,21,12,1),(21,21,2,1),(13,21,16,null),
     
     /* Ingredientes e medidas  da receita Ravioli*/    
-	(36,23,4,200),(22,23,null,2),(13,23,null,1),(57,23,4,50),(9,23,null,null),(11,22,null,null),(80,23,null,null),
+    (36,23,4,200),(22,23,null,2),(13,23,null,1),(57,23,4,50),(9,23,null,null),(11,22,null,null),(80,23,null,null),
     (46,23,null,null),(57,23,4,50),(85,23,null,null),
     
     /* Ingredientes e medidas  da receita Lasagna*/    
-	(82,24,null,1),(83,24,4,500),(84,24,4,500),(57,24,4,500),(85,24,null,1),(13,24,16,null),(50,24,16,null),
+    (82,24,null,1),(83,24,4,500),(84,24,4,500),(57,24,4,500),(85,24,null,1),(13,24,16,null),(50,24,16,null),
     (59,24,16,null),
     
     /* Ingredientes e medidas  da receita Struffoli*/    
-	(16,25,2,2),(38,25,2,2),(86,25,null,1),(37,25,7,1),(60,25,12,1/2),(36,25,1,2/5),(21,25,null,null),
+    (16,25,2,2),(38,25,2,2),(86,25,null,1),(37,25,7,1),(60,25,12,1/2),(36,25,1,2/5),(21,25,null,null),
     (87,25,2,1),(88,25,1,1/2),(89,25,2,1),
     
     /* Ingredientes e medidas  da receita Sushi*/    
-	(90,26,1,4),(19,26,1,5),(91,26,2,4),(92,26,8,2),(93,26,null,2),(94,26,null,2),(95,26,8,null),
+    (90,26,1,4),(19,26,1,5),(91,26,2,4),(92,26,8,2),(93,26,null,2),(94,26,null,2),(95,26,8,null),
     (78,26,null,null),(96,26,2,2),(16,26,2,2),(13,26,2,2),(97,26,null,null),
     
     /* Ingredientes e medidas  da receita Sashimi*/    
-	(98,27,4,500),(19,26,1,5),(91,26,2,4),(92,26,8,2),(93,26,null,2),(94,26,null,2),(95,26,8,null),
+    (98,27,4,500),(19,26,1,5),(91,26,2,4),(92,26,8,2),(93,26,null,2),(94,26,null,2),(95,26,8,null),
     (78,26,null,null),
     
     /* Ingredientes e medidas  da receita CROQUE MONSIEUR*/    
-	(56,28,8,16),(22,28,null,2),(60,28,4,300),(83,28,8,null),(109,28,null,null),(110,28,16,null),
+    (56,28,8,16),(22,28,null,2),(60,28,4,300),(83,28,8,null),(109,28,null,null),(110,28,16,null),
     
     /* Ingredientes e medidas  da receita Crepe*/    
-	(36,29,12,1),(20,29,12,1/4),(22,29,null,1),(103,29,null,10),(13,29,null,1),
+    (36,29,12,1),(20,29,12,1/4),(22,29,null,1),(103,29,null,10),(13,29,null,1),
     
     /* Ingredientes e medidas  da receita Panquecas americanas*/    
-	(36,30,12,1/4),(16,30,2,1),(37,30,7,3),(22,30,null,2),(20,30,12,1),(38,30,2,2),(13,30,null,1),
+    (36,30,12,1/4),(16,30,2,1),(37,30,7,3),(22,30,null,2),(20,30,12,1),(38,30,2,2),(13,30,null,1),
     (21,30,null,null),
-    
+       
     /* Ingredientes e medidas  da receita Hambúrguer*/    
-	(57,31,6,3),(104,31,4,300),(22,31,null,1),(36,31,2,3),
+    (57,31,6,3),(104,31,4,300),(22,31,null,1),(36,31,2,3),
     
     /* Ingredientes e medidas  da receita Pies (Tortas)*/    
-	(108,32,null,null),(11,32,15,1),(57,32,4,300),(36,32,2,2),(85,32,1,1/3),(105,32,2,1),(57,32,1,1),
+    (108,32,null,null),(11,32,15,1),(57,32,4,300),(36,32,2,2),(85,32,1,1/3),(105,32,2,1),(57,32,1,1),
     (28,32,2,2),(13,32,16,null),
     
     /* Ingredientes e medidas  da receita Damper*/    
-	(36,33,1,3),(13,33,2,1/2),(38,33,2,5.5),(106,33,1,3/4),
+    (36,33,1,3),(13,33,2,1/2),(38,33,2,5.5),(106,33,1,3/4),
     
     /* Ingredientes e medidas  da receita Filé de atum grelhado*/    
-	(111,34,null,6),(80,34,15,4),(71,34,15,1),(27,34,15,1),(9,34,13,3),(112,34,null,1/2),(5,34,16,1),
+    (111,34,null,6),(80,34,15,4),(71,34,15,1),(27,34,15,1),(9,34,13,3),(112,34,null,1/2),(5,34,16,1),
     (21,34,null,2);
 /* Mostrando a associação dos os ingredientes com as receitas,medidas e quantidade  */   
 select * from  ingrediente_receita  ; 
