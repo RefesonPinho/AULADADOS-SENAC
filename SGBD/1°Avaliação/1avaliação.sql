@@ -92,9 +92,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 Agora começa a insercão dos dados dentro do banco de dados "obrasdearte" como pedido no exercicio 1° da avaliação
 */
 
-
 use obrasdearte;
- 
  /* Inserindo dados na tabela artista */
 insert into obrasdearte.artista(idartista,nome,nacionalidade,datanascimento,dataobito)
  
@@ -106,9 +104,6 @@ insert into obrasdearte.artista(idartista,nome,nacionalidade,datanascimento,data
 /* Dados inseridos no banco de dados sendo mostrados na linha 107 atravez do comando select from * */
 select * from artista;
 
-
-
-
 /* Inserindo dados na tabela tipo */
 insert into obrasdearte.tipo(idtipo,descricao)
 
@@ -118,13 +113,8 @@ values
 (2,"escultura"),
 (3,"arquitetura");
 
-
 /* Dados inseridos no banco de dados sendo mostrados na linha 123 atravez do comando select from *  */
 select *from tipo;
-
-
-
-
 
 /* Inserindo dados na tabela objeto */
 insert into obrasdearte.objeto(idobjeto,idartista,idtipo,titulo,anocriacao,descricao)
@@ -137,10 +127,6 @@ values
 
 /* Dados inseridos no banco de dados sendo mostrados na linha 139 atravez do comando select from * */
 select * from objeto;
-
-
-
-
 
 /* Inserindo dados na tabela colecao */
 insert into obrasdearte.colecao(idcolecao,instituicao,nome_responsavel,telefone,endereco)
@@ -156,10 +142,7 @@ select *from colecao;
 
 /*Finalizei o exercicio 1° na linha 155 */
 
-
-
 /*Iniciando o exercicio número 2 da avaliação na linha 166 */
-
 
 /* Criando o banco de dados empresaAvaliacao e suas tabelas com seus tipos de dados atravez do script disponibilizado no enunciado da questão 2.*/
 
@@ -196,11 +179,8 @@ update projetos
 set prazo_projeto_dias = "4"
 where id = "4";
 
-
 /* Dados atualizados e alterado no banco de dados sendo mostrados na linha 201 atravez do comando select from * */
 select* from projetos;
-
-
 
 /* Deletando dado salvo no campo prazo_projeto_dias onde tem o numero "45" na tabela projetos atravez do comando delete from */
 SET SQL_SAFE_UPDATES = 0;
